@@ -61,7 +61,7 @@ custom_sign($_GET['msg'], $yek, safe_sign($_GET['key'])) === $_GET['hash'];
 ### Issue with IV in `openssl_encrypt`
 
 If the IV is not properly passed to `openssl_encrypt()`:
-- PHP pads it with null bytes (`\0`) if too short.
+- PHP pads it with null bytes (` `) if too short.
 - If completely missing or incorrect (like `false`), it can result in unintended behavior and even insecure encryption.
 
 ---
@@ -137,3 +137,7 @@ Because the signature matches, the malicious `note` gets executed.
 ## FLAG
 
 ![flag](https://github.com/user-attachments/assets/c2f5a464-cbec-4445-92a7-2663f5e0ae53)
+
+---
+
+**Solved with the best teammate: [Logan0x](https://github.com/Logan0x)**
