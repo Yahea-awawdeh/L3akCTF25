@@ -140,4 +140,4 @@ Because the signature matches, the malicious `note` gets executed.
 
 ---
 
-**Solved with the best teammate: [Logan0x](https://github.com/Logan0x)**
+**Solved with the best teammate: [Logan0x]**
